@@ -1,9 +1,9 @@
 import os
 
-BOT_TOKEN = os.environ.get("BOT_TOKEN", "8500256065:AAHqhuzaTUEf46ukU33OKYv-QhoQpyFCb5s")
-PORT      = int(os.environ.get("PORT", 3000))
-PROXY_URL = os.environ.get("PROXY_URL", ("PROXY_URL", "https://astha-singh.onrender.com")
-MONGO_URI = os.environ.get("MONGO_URI", "mongodb+srv://TempApiBot:happyboy_125@tempapi.duckkpj.mongodb.net/?appName=TempApi")
+BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
+PORT      = int(os.environ.get("PORT", 8000))   # Render/Railway/Koyeb default
+PROXY_URL = os.environ.get("PROXY_URL", f"http://localhost:{PORT}")
+MONGO_URI = os.environ.get("MONGO_URI", "")
 CLEANUP_INTERVAL = 300
 
 # ── Admin List ─────────────────────────────────────────────────────────────────

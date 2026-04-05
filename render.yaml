@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: temp-api-bot
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python bot.py
+    envVars:
+      - key: BOT_TOKEN
+        sync: false          # Render dashboard se manually set karo
+      - key: MONGO_URI
+        sync: false          # Render dashboard se manually set karo
+      - key: PROXY_URL
+        sync: false          # Apni Render URL daalo, e.g. https://temp-api-bot.onrender.com
