@@ -1,6 +1,6 @@
 import os
 
-BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
+BOT_TOKEN = os.environ.get("BOT_TOKEN", "8500256065:AAHqhuzaTUEf46ukU33OKYv-QhoQpyFCb5s")
 PORT      = int(os.environ.get("PORT", 3000))
 PROXY_URL = os.environ.get("PROXY_URL", f"http://localhost:{PORT}")
 MONGO_URI = os.environ.get("MONGO_URI", "")
