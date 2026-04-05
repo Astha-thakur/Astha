@@ -262,7 +262,9 @@ async def on_message(update: Update, ctx: ContextTypes.DEFAULT_TYPE):
 
 # ── Background ─────────────────────────────────────────────────────────────────
 def _flask():
-    flask_app.run(host="0.0.0.0", port=config.PORT, threaded=True)
+    # host="0.0.0.0" zaroori hai Render/Railway/Koyeb ke liye
+    # PORT env variable automatically platform deta hai
+    flask_app.run(host="0.0.0.0", port=config.PORT, threaded=True, use_reloader=False)
 
 def _cleanup():
     while True:
